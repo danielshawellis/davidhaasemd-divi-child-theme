@@ -1,0 +1,56 @@
+/* Desktop Styles First */
+.divi-child-theme-custom-header-main-outer-container {
+  background-color: #222;
+}
+.divi-child-theme-custom-header-main-inner-container {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 60px;
+}
+.divi-child-theme-custom-header-logo-container {
+  flex-basis: 180px;
+}
+.divi-child-theme-custom-header-logo {
+  position: absolute;
+  top: 15px;
+  width: 180px;
+  height: 180px;
+  padding: 35px;
+  background-color: white;
+  box-shadow: 10px 10px 15px 3px rgba(0,0,0,0.5);
+}
+.divi-child-theme-custom-header-logo svg {
+  max-height: 100%;
+  max-width: 100%;
+}
+.divi-child-theme-custom-header-menu-items {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  padding: 0 3%;
+}
+.divi-child-theme-custom-header-menu-items #menu-main-header-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  list-style: none;
+}
+.divi-child-theme-custom-header-menu-items .menu-item {
+  padding: 3px 10px;
+}
+.divi-child-theme-custom-header-menu-items .menu-item:last-child {
+  background-color: #444;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+.divi-child-theme-custom-header-menu-items .menu-item a {
+  white-space: nowrap;
+  color: white;
+}
+
+/* Mobile Overrides Below (To Reset Breakpoint, Change It Here And In 'divi-childtheme-custom-header.js') */
+@media screen and ( max-width:767px ) {
+
+}

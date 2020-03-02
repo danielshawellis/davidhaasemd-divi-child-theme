@@ -1,0 +1,125 @@
+/*
+ Theme Name:     Divi Child
+ Theme URI:      https://www.elegantthemes.com/gallery/divi/
+ Description:    Divi Child Theme
+ Author:         Daniel Ellis
+ Author URI:     https://www.elegantthemes.com
+ Template:       Divi
+ Version:        1.0.0
+*/
+
+
+/* Theme customization starts below
+------------------------------------------------------- */
+
+/*
+  Child Theme Custom Header Styles
+*/
+/**
+ DEVELOPER NOTES:
+ -Styles for the mobile menu will override desktop styles when the screen width is below the header's mobile break point
+ -Styles for the open mobile menu will be added in 'divi-child-theme-custom-header.js' to override styles for the default closed state
+*/
+.divi-child-theme-custom-header-main-outer-container {
+  background-color: #222;
+}
+.divi-child-theme-custom-header-main-inner-container {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 60px;
+}
+.divi-child-theme-custom-header-logo-container {
+  flex-basis: 180px;
+}
+.divi-child-theme-custom-header-logo {
+  position: absolute;
+  top: 15px;
+  width: 180px;
+  height: 180px;
+  padding: 35px;
+  background-color: white;
+  box-shadow: 10px 10px 15px 3px rgba(0,0,0,0.5);
+}
+.divi-child-theme-custom-header-logo svg {
+  max-height: 100%;
+  max-width: 100%;
+}
+.divi-child-theme-custom-header-hamburger {
+  display: none;
+}
+.divi-child-theme-custom-header-menu-items {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  padding: 0 3%;
+}
+.divi-child-theme-custom-header-menu-items #menu-main-header-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  list-style: none;
+}
+.divi-child-theme-custom-header-menu-items .menu-item {
+  padding: 3px 10px;
+}
+.divi-child-theme-custom-header-menu-items .menu-item:last-child {
+  background-color: #444;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+.divi-child-theme-custom-header-menu-items .menu-item a {
+  white-space: nowrap;
+  color: white;
+}
+
+/* Mobile overrides for custom header below, change breakpoint here */
+@media screen and ( max-width:970px ) {
+  /* Default styles for closed menu */
+  .divi-child-theme-custom-header-main-inner-container {
+    flex-wrap: wrap;
+    padding: 0 0;
+  }
+  .divi-child-theme-custom-header-logo {
+    top: 10px;
+    left: 30px;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+  }
+  .divi-child-theme-custom-header-hamburger-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 15px 30px;
+  }
+  .divi-child-theme-custom-header-hamburger-container svg {
+    width: 30px;
+  }
+  .divi-child-theme-custom-header-hamburger-container svg path {
+    fill: white;
+  }
+  .divi-child-theme-custom-header-menu-items {
+    display: none;
+    height: 0;
+    overflow: hidden;
+    background-color: #2E2E2E;
+    box-shadow: 0px 5px 5px;
+  }
+  .divi-child-theme-custom-header-menu-items #menu-main-header-menu {
+    flex-wrap: wrap;
+    padding: 20px 30px;
+  }
+  .divi-child-theme-custom-header-menu-items .menu-item {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 8px 0;
+    background-color: #222;
+    border: 1px solid white;
+    border-radius: 8px;
+  }
+  .divi-child-theme-custom-header-menu-items .menu-item:last-child {
+    order: -1;
+  }
+}
